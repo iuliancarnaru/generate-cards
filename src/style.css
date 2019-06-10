@@ -1,0 +1,138 @@
+body {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 100px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .App {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: calc(33% - 20px);
+    margin: 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card--horizontal {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card--highlight {
+    background-color: #991962;
+    color: white;
+  }
+  
+  .card--dark {
+    background-color: #333;
+    color: white;
+  }
+  
+  .card__content {
+    flex-grow: 1;
+  }
+  
+  .card--horizontal .card__footer {
+    width: 100%;
+  }
+  
+  .card__image {
+    width: 100%;
+  }
+  
+  .card--horizontal .card__image {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .card__row {
+    display: flex;
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+  
+  .card__row--footer {
+    padding-top: 10px;
+    min-height: 30px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .card__row-item {
+    margin-right: 10px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  
+  .card__row-item:last-child {
+    margin-right: 0;
+  }
+  
+  .card__row-item--tag {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 4px 8px;
+  }
+  
+  .card__row-item--large {
+    font-size: 18px;
+  }
+  
+  .card__row-item--small {
+    font-size: 12px;
+  }
+  
+  .card__row-item--author {
+    display: block;
+    text-align: right;
+    width: 100%;
+  }
+  
+  .card__label {
+    font-weight: 600;
+    color: rebeccapurple;
+  }
+  
+  .card__author-img {
+    width: 150px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+  }
+  
+  .card__icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .card__icon--pre {
+    margin-right: 10px;
+    float: left;
+  }
+  
+  .card__icon--post {
+    margin-left: 10px;
+    float: right;
+  }
+  
+  .card__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card--highlight .card__icon svg {
+    fill: white;
+  }
+  
